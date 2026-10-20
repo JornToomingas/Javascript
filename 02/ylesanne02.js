@@ -22,6 +22,15 @@ console.log(`"${tsitaat1} ${tsitaat2}" - ${autor}`);
 let Eesnimi = "Karl";
 let Perenimi = "Kold";
 
+// Perenime pikkus
+let eespere = "Andre,Meronen";
+
+console.log(eespere.replaceAll(",Meronen", " "));
+console.log(eespere.toUpperCase());
+console.log(eespere.length);
+
+
+
 // E-posti aadressi muutmine
 
 let epost = "karl.kold@hkhk.edu.ee.com";
@@ -32,4 +41,4 @@ console.log(epost.replaceAll("hkhk.edu.ee", "gmail"));
 // Oodatav tulemus: "40.19.226.175" ja "mmartinovic0"
 let andmed = "1,Marshal,Martinovic,mmartinovic0@dedecms.com,Male,40.19.226.175";
 
-console.log(andmed.replaceAll("1,Marshal,Martinovic,", "").replaceAll(",Male", ""));
+console.log(andmed.replaceAll("1,Marshal,Martinovic,", "").replaceAll("@dedecms.com", "").replaceAll(",Male", ""));
