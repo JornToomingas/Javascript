@@ -3,7 +3,7 @@
 // 20.10.2026
 
 // Kellaaeg
-// Oodatav tulemus nt: "10:20:56AM"
+// Oodatav tulemus "10:20:56AM"
 let tund = 10;
 let minut = 20;
 let sekund = 56;
