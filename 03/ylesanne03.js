@@ -3,17 +3,22 @@
 // 20.10.2026
 
 // Soiduaeg ja kaugus
-let soiduaeg = 35; //min
-let soidukaugus = 20; //kmh
+let soidukaugus = 35; //min
+let kiirus = 20; //kmh
 
-console.log
+let soiduaeg = soidukaugus / kiirus; // tundi
+
+console.log(soiduaeg);
 
 // Postituse kuvamine
-let postitus = 137; 
-let max_postitus= 10;
-let jagamine = postitus / max_postitus;
-let floatAsNumber = parseInt(jagamine);
-console.log(floatAsNumber);
+let postitus = 137;
+let max_postitus = 10;
+
+let lehekülgi = parseInt(postitus / max_postitus) + 1;
+let viimaselLehel = postitus % max_postitus;
+
+console.log(lehekülgi); // 14
+console.log(viimaselLehel); // 7
 
 // Serveri töökulu
 
